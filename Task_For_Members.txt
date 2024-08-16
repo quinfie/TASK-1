@@ -1,5 +1,5 @@
 2001216146 - Nguyễn Lê Bá Thành - nlbthanh@gmail.com - 0342893010
- + Day 1 ( 16/08/2024 ) : Thực hiện phân task, create GitHub, khởi tạo database.
+ + Day 1 ( 16/08/2024 ) : Thực hiện phân task, tạo GitHub, khởi tạo database.
  + Day 2 ( 17/08/2024 ) :
  + Day 3 ( 18/08/2024 ) :
  + Day 4 ( 19/08/2024 ) :
