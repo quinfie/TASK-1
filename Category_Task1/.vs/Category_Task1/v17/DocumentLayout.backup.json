@@ -1,0 +1,324 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816225931_DbInitt8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816225931_DbInitt8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816193146_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816193146_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192923_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816192923_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192536_Add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816192536_Add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192124_Add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816192124_Add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816190854_AddCategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240816190854_AddCategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|c:\\users\\hi hi\\downloads\\task1\\new folder\\category_task1\\category_task1\\category_task1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\category_task1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Order.cs",
+              "RelativeToolTip": "Category_Task1\\Entities\\Order.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T21:00:50.12Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Product.cs",
+              "RelativeToolTip": "Category_Task1\\Entities\\Product.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T18:57:33.248Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Entities\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\OrderDetail.cs",
+              "RelativeToolTip": "Category_Task1\\Entities\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T21:59:08.981Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
+              "RelativeToolTip": "Category_Task1\\Data\\DataContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:54:01.156Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240816225931_DbInitt8.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816225931_DbInitt8.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816225931_DbInitt8.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816225931_DbInitt8.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816225931_DbInitt8.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T22:59:31.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Category_Task1\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:40:50.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Category_Task1\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:40:13.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Program.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Program.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Program.cs",
+              "RelativeToolTip": "Category_Task1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:23:29.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Entities\\Category.cs",
+              "RelativeToolTip": "Category_Task1\\Entities\\Category.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:25:04.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Model\\ProductModel.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Model\\ProductModel.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Model\\ProductModel.cs",
+              "RelativeToolTip": "Category_Task1\\Model\\ProductModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:52:28.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240816193146_DbInit.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816193146_DbInit.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816193146_DbInit.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816193146_DbInit.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816193146_DbInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:31:46.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240816192923_DbInit.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192923_DbInit.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816192923_DbInit.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192923_DbInit.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816192923_DbInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:29:23.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Category_Task1\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\appsettings.Development.json",
+              "RelativeToolTip": "Category_Task1\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-16T19:22:50.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240816192536_Add.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192536_Add.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816192536_Add.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192536_Add.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816192536_Add.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:25:37.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240816192124_Add.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192124_Add.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816192124_Add.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816192124_Add.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816192124_Add.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:21:24.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240816190854_AddCategories.cs",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816190854_AddCategories.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816190854_AddCategories.cs",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Migrations\\20240816190854_AddCategories.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240816190854_AddCategories.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T19:08:54.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Category_Task1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Category_Task1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-16T08:25:15.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category_Task1.http",
+              "DocumentMoniker": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Category_Task1.http",
+              "RelativeDocumentMoniker": "Category_Task1\\Category_Task1.http",
+              "ToolTip": "C:\\Users\\Hi hi\\Downloads\\Task1\\New folder\\Category_Task1\\Category_Task1\\Category_Task1.http",
+              "RelativeToolTip": "Category_Task1\\Category_Task1.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-08-16T07:19:28.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
