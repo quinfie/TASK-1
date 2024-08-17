@@ -14,7 +14,7 @@ namespace Category_Task1.Entities
         public string OrderShippingAddress { get; set; } = string.Empty;
         public int EmployeeId { get; set; }
 
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public ICollection<OrderDetail>? OrderDetails { get; set; }
 
         public Order()
         {

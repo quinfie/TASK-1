@@ -63,7 +63,7 @@ namespace Category_Task1.Controllers
             
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public ActionResult UpdateProduct(int id, ProductModel productModel)
         {
             var product = _context.Products.SingleOrDefault(p => p.ProductId == id);
@@ -84,7 +84,7 @@ namespace Category_Task1.Controllers
                 return NotFound();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ActionResult DeleteProduct(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.ProductId == id);
