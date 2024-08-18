@@ -15,8 +15,8 @@
  + Day 6 ( 21/08/2024 ) :
  + Day 7 ( 22/08/2024 ) :
 2001216100 - Trần Gia Quỳnh - tgq.2053@gmail.com - 0931774698	
- + Day 1 ( 16/08/2024 ) : CRUD Product với dữ liệu ảo, đang bí bách phần Order - Order Detail
- + Day 2 ( 17/08/2024 ) : CRUD Product với Code First, Order Controller xử lý 75%
+ + Day 1 ( 16/08/2024 ) : xong CRUD Product với dữ liệu ảo, đang bí bách phần Order - Order Detail
+ + Day 2 ( 17/08/2024 ) : xong CRUD Product với Code First, Order Controller xử lý 50%
  + Day 3 ( 18/08/2024 ) :
  + Day 4 ( 19/08/2024 ) :
  + Day 5 ( 20/08/2024 ) :

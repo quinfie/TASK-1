@@ -3,6 +3,9 @@ using Category_Task1.Entities;
 using Category_Task1.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Category_Task1.Controllers
 {
@@ -10,7 +13,6 @@ namespace Category_Task1.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-
         private readonly DataContext _context;
 
         public ProductController(DataContext context)
@@ -19,28 +21,36 @@ namespace Category_Task1.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetAllProducts()
+        public async Task<ActionResult> GetAllProducts()
         {
-            var lsProduct = _context.Products;
+            var lsProduct = await _context.Products.ToListAsync();
             return Ok(lsProduct);
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetByIdProduct(int id)
+        public async Task<ActionResult> GetByIdProduct(int id)
         {
-            var product = _context.Products.SingleOrDefault(p => p.ProductId == id);
+            var product = await _context.Products.SingleOrDefaultAsync(p => p.ProductId == id);
             if (product != null)
             {
                 return Ok(product);
             }
-            return NotFound();
+            return BadRequest("Sản phẩm không tồn tại!");
         }
 
         [HttpPost]
-        public ActionResult CreateProduct(ProductModel productModel)
+        public async Task<ActionResult> CreateProduct(ProductModel productModel)
         {
             try
             {
+                var existingProduct = await _context.Products
+                    .SingleOrDefaultAsync(p => p.ProductName == productModel.ProductName);
+
+                if (existingProduct != null)
+                {
+                    return BadRequest("Đã tồn tại sản phẩm có cùng tên!");
+                }
+
                 var product = new Product
                 {
                     ProductName = productModel.ProductName,
@@ -52,49 +62,60 @@ namespace Category_Task1.Controllers
                     ProductImage = productModel.ProductImage,
                     Id = productModel.Id,
                 };
-                _context.Products.Add(product);
-                _context.SaveChanges();
+
+                await _context.Products.AddAsync(product);
+                await _context.SaveChangesAsync();
                 return Ok(product);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateProduct(int id, ProductModel productModel)
+        public async Task<ActionResult> UpdateProduct(int id, ProductModel productModel)
         {
-            var product = _context.Products.SingleOrDefault(p => p.ProductId == id);
-            if (product != null)
+            var product = await _context.Products.SingleOrDefaultAsync(p => p.ProductId == id);
+
+            if (product == null)
             {
-                product.ProductName = productModel.ProductName;
-                product.ProductSize = productModel.ProductSize;
-                product.ProductPrice = productModel.ProductPrice;
-                product.ProductQuantity = productModel.ProductQuantity; 
-                product.ProductColor = productModel.ProductColor;
-                product.ProductImage = productModel.ProductImage;
-                product.ProductDescription = productModel.ProductDescription;
-                product.Id = productModel.Id;
-                _context.SaveChanges();
-                return Ok(product);
+                return BadRequest("Sản phẩm không tồn tại!");
             }
-            else
-                return NotFound();
+
+            var existingProduct = await _context.Products
+                .Where(p => p.ProductName == productModel.ProductName && p.ProductId != id)
+                .SingleOrDefaultAsync();
+
+            if (existingProduct != null)
+            {
+                return BadRequest("Đã tồn tại sản phẩm có cùng tên!");
+            }
+
+            product.ProductName = productModel.ProductName;
+            product.ProductSize = productModel.ProductSize;
+            product.ProductPrice = productModel.ProductPrice;
+            product.ProductQuantity = productModel.ProductQuantity;
+            product.ProductColor = productModel.ProductColor;
+            product.ProductImage = productModel.ProductImage;
+            product.ProductDescription = productModel.ProductDescription;
+            product.Id = productModel.Id;
+
+            await _context.SaveChangesAsync();
+            return Ok(product);
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteProduct(int id)
+        public async Task<ActionResult> DeleteProduct(int id)
         {
-            var product = _context.Products.SingleOrDefault(p => p.ProductId == id);
+            var product = await _context.Products.SingleOrDefaultAsync(p => p.ProductId == id);
             if (product != null)
             {
                 _context.Products.Remove(product);
-                _context.SaveChanges();
-                return Ok();
+                await _context.SaveChangesAsync();
+                return Ok("Xóa sản phẩm thành công!");
             }
-            return NotFound();
+            return BadRequest("Sản phẩm không tồn tại!");
         }
     }
 }

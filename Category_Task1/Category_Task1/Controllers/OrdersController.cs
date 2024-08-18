@@ -3,6 +3,8 @@ using Category_Task1.Entities;
 using Category_Task1.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading.Tasks;
 
 namespace Category_Task1.Controllers
 {
@@ -18,25 +20,25 @@ namespace Category_Task1.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetAllOrders()
+        public async Task<ActionResult> GetAllOrders()
         {
-            var lsOrder = _context.Orders;
+            var lsOrder = await _context.Orders.ToListAsync();
             return Ok(lsOrder);
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetByIdOrder(int id)
+        public async Task<ActionResult> GetByIdOrder(int id)
         {
-            var order = _context.Orders.SingleOrDefault(p => p.OrderId == id);
+            var order = await _context.Orders.SingleOrDefaultAsync(p => p.OrderId == id);
             if (order != null)
             {
                 return Ok(order);
             }
-            return NotFound();
+            return BadRequest("Đơn hàng không tồn tại!");
         }
 
         [HttpPost]
-        public ActionResult CreateOrder(OrderModel orderModel)
+        public async Task<ActionResult> CreateOrder(OrderModel orderModel)
         {
             try
             {
@@ -49,21 +51,21 @@ namespace Category_Task1.Controllers
                     OrderTotalPrice = orderModel.OrderTotalPrice,
                     EmployeeId = orderModel.EmployeeId,
                 };
-                _context.Orders.Add(order);
-                _context.SaveChanges();
+
+                await _context.Orders.AddAsync(order);
+                await _context.SaveChangesAsync();
                 return Ok(order);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateOrder(int id, OrderModel orderModel)
+        public async Task<ActionResult> UpdateOrder(int id, OrderModel orderModel)
         {
-            var order = _context.Orders.SingleOrDefault(p => p.OrderId == id);
+            var order = await _context.Orders.SingleOrDefaultAsync(p => p.OrderId == id);
             if (order != null)
             {
                 order.OrderDate = orderModel.OrderDate;
@@ -72,24 +74,25 @@ namespace Category_Task1.Controllers
                 order.OrderStatus = orderModel.OrderStatus;
                 order.OrderTotalPrice = orderModel.OrderTotalPrice;
                 order.EmployeeId = orderModel.EmployeeId;
-                _context.SaveChanges();
+
+                await _context.SaveChangesAsync();
                 return Ok(order);
             }
             else
-                return NotFound();
+                return BadRequest("Đơn hàng không tồn tại!");
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteOrder(int id)
+        public async Task<ActionResult> DeleteOrder(int id)
         {
-            var order = _context.Orders.SingleOrDefault(p => p.OrderId == id);
+            var order = await _context.Orders.SingleOrDefaultAsync(p => p.OrderId == id);
             if (order != null)
             {
                 _context.Orders.Remove(order);
-                _context.SaveChanges();
-                return Ok();
+                await _context.SaveChangesAsync();
+                return Ok("Xóa đơn hàng thành công!");
             }
-            return NotFound();
+            return BadRequest("Đơn hàng không tồn tại!");
         }
     }
 }
