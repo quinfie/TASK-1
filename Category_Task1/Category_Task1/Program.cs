@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     //Install Microsoft.EntityFrameworkCore.SqlServer
+    //Install Microsoft.EntityFrameworkCore.Tools
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
