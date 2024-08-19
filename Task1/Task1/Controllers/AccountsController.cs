@@ -1,110 +1,156 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using Task1.Data;
 using Task1.Models;
 
-namespace Task1.Controllers
+namespace WebApiWithRoleAuthentication.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class AccountsController : ControllerBase
+    public class AccountController : ControllerBase
     {
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IConfiguration _configuration;
         private readonly MyDbContext _context;
-
-        public AccountsController(MyDbContext context)
+        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, MyDbContext context)
         {
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _configuration = configuration;
             _context = context;
         }
 
-        // GET: api/Accounts
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] Register model)
         {
-            return await _context.Accounts.ToListAsync();
-        }
-
-        // GET: api/Accounts/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Account>> GetAccount(int id)
-        {
-            var account = await _context.Accounts.FindAsync(id);
-
-            if (account == null)
+            // Tạo đối tượng Employee từ dữ liệu đăng ký
+            var employee = new Employee
             {
-                return NotFound();
-            }
+                FullName = model.FullName,
+                Position = model.Position,
+                Department = model.Department
+            };
 
-            return account;
-        }
+            // Lưu thông tin Employee vào cơ sở dữ liệu
+            _context.Employees.Add(employee);
+            await _context.SaveChangesAsync();
 
-        // PUT: api/Accounts/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutAccount(int id, Account account)
-        {
-            if (id != account.AccountId)
+            // Tạo đối tượng Account từ dữ liệu đăng ký
+            var account = new Account
             {
-                return BadRequest();
-            }
+                Username = model.Username,
+                Password = model.Password,
+                RoleEmployee = 1,
+                EmployeeId = employee.EmployeeId
+            };
 
-            _context.Entry(account).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AccountExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Accounts
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Account>> PostAccount(Account account)
-        {
+            // Lưu thông tin Account vào cơ sở dữ liệu
             _context.Accounts.Add(account);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAccount", new { id = account.AccountId }, account);
+            return Ok(new { message = "User registered successfully" });
         }
 
-        // DELETE: api/Accounts/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAccount(int id)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] Login model)
         {
-            var account = await _context.Accounts.FindAsync(id);
+            var account = await _context.Accounts
+           .Include(a => a.Employee) // Load thông tin Employee liên quan
+           .FirstOrDefaultAsync(a => a.Username == model.Username && a.Password == model.Password);
+
             if (account == null)
             {
-                return NotFound();
+                return Unauthorized(new { message = "Invalid username or password" });
             }
 
-            _context.Accounts.Remove(account);
-            await _context.SaveChangesAsync();
+            // Tạo JWT token
+            var token = GenerateJwtToken(account);
 
-            return NoContent();
+            return Ok(new
+            {
+                token = token,
+                account = new
+                {
+                    account.AccountId,
+                    account.Username,
+                    account.RoleEmployee,
+                    employee = new
+                    {
+                        account.Employee.EmployeeId,
+                        account.Employee.FullName,
+                        account.Employee.Position,
+                        account.Employee.Department
+                    }
+                }
+            });
         }
 
-        private bool AccountExists(int id)
+        private string GenerateJwtToken(Account account)
         {
-            return _context.Accounts.Any(e => e.AccountId == id);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                new Claim(ClaimTypes.Name, account.Username),
+                new Claim(ClaimTypes.Role, account.RoleEmployee.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+        //[HttpPost("add-role")]
+        //public async Task<IActionResult> AddRole([FromBody] string role)
+        //{
+        //    if (!await _roleManager.RoleExistsAsync(role))
+        //    {
+        //        var result = await _roleManager.CreateAsync(new IdentityRole(role));
+        //        if (result.Succeeded)
+        //        {
+        //            return Ok(new { message = "Role added successfully" });
+        //        }
+
+        //        return BadRequest(result.Errors);
+        //    }
+
+        //    return BadRequest("Role already exists");
+        //}
+
+        //[HttpPost("assign-role")]
+        //public async Task<IActionResult> AssignRole([FromBody] UserRole model)
+        //{
+        //    var user = await _userManager.FindByNameAsync(model.Username);
+        //    if (user == null)
+        //    {
+        //        return BadRequest("User not found");
+        //    }
+
+        //    var result = await _userManager.AddToRoleAsync(user, model.Role);
+        //    if (result.Succeeded)
+        //    {
+        //        return Ok(new { message = "Role assigned successfully" });
+        //    }
+
+        //    return BadRequest(result.Errors);
+        //}
+
+        [HttpGet("secure-data")]
+        public IActionResult GetSecureData()
+        {
+            // API này chỉ được truy cập bởi người dùng đã xác thực
+            return Ok(new { message = "This is secure data" });
         }
     }
 }
