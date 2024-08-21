@@ -47,7 +47,7 @@ namespace WebApiWithRoleAuthentication.Controllers
             {
                 Username = model.Username,
                 Password = model.Password,
-                RoleEmployee = 1,
+                RoleEmployee = model.RoleEmployee,
                 EmployeeId = employee.EmployeeId
             };
 
@@ -126,49 +126,6 @@ namespace WebApiWithRoleAuthentication.Controllers
         {
             return Ok("Welcome User");
         }
-
-
-
-        //[HttpPost("add-role")]
-        //public async Task<IActionResult> AddRole([FromBody] string role)
-        //{
-        //    if (!await _roleManager.RoleExistsAsync(role))
-        //    {
-        //        var result = await _roleManager.CreateAsync(new IdentityRole(role));
-        //        if (result.Succeeded)
-        //        {
-        //            return Ok(new { message = "Role added successfully" });
-        //        }
-
-        //        return BadRequest(result.Errors);
-        //    }
-
-        //    return BadRequest("Role already exists");
-        //}
-
-        //[HttpPost("assign-role")]
-        //public async Task<IActionResult> AssignRole([FromBody] UserRole model)
-        //{
-        //    var user = await _userManager.FindByNameAsync(model.Username);
-        //    if (user == null)
-        //    {
-        //        return BadRequest("User not found");
-        //    }
-
-        //    var result = await _userManager.AddToRoleAsync(user, model.Role);
-        //    if (result.Succeeded)
-        //    {
-        //        return Ok(new { message = "Role assigned successfully" });
-        //    }
-
-        //    return BadRequest(result.Errors);
-        //}
-
-        //[HttpGet("secure-data")]
-        //public IActionResult GetSecureData()
-        //{
-        //    // API này chỉ được truy cập bởi người dùng đã xác thực
-        //    return Ok(new { message = "This is secure data" });
-        //}
+       
     }
 }

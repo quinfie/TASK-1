@@ -9,4 +9,5 @@
 
         public ICollection<Account> Accounts { get; set; } // Mối quan hệ one-to-many với Account
     }
+
 }
