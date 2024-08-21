@@ -12,5 +12,18 @@ namespace Category_Task1.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Order_Detail> Order_Details { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Master Key Configuration for Order_Detail
+            modelBuilder.Entity<Order_Detail>()
+                .HasKey(od => od.Order_Detail_Id);
+
+            // Other configurations if needed
+        }
     }
 }

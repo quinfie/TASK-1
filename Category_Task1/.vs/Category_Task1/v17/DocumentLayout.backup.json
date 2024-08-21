@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\controllers\\order_detailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\controllers\\order_detailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Migrations\\20240821090105_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Category_Task1\\Migrations\\20240821090105_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\migrations\\20240816084656_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\migrations\\20240816084656_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\category_task1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\category_task1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\entities\\order_detail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\entities\\order_detail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\category_task1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\category_task1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|d:\\amazing_intern\\task_1\\category_task1\\category_task1\\category_task1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B3E8C68B-BC1D-4F9C-9A8D-93A12A05772C}|Category_Task1\\Category_Task1.csproj|solutionrelative:category_task1\\category_task1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,56 +46,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Category_Task1\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAwwFMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "20240821090105_Initial.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Migrations\\20240821090105_Initial.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240821090105_Initial.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Migrations\\20240821090105_Initial.cs",
+              "RelativeToolTip": "Category_Task1\\Migrations\\20240821090105_Initial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T07:29:41.077Z",
+              "WhenOpened": "2024-08-21T09:01:06.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Order_DetailController.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\Order_DetailController.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\Order_DetailController.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\Order_DetailController.cs",
+              "RelativeToolTip": "Category_Task1\\Controllers\\Order_DetailController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T03:27:53.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "Category_Task1\\Data\\DataContext.cs",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
-              "RelativeToolTip": "Category_Task1\\Data\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Category_Task1\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T07:54:01.156Z"
+              "WhenOpened": "2024-08-21T03:36:19.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "Category_Task1\\Entities\\Category.cs",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Entities\\Category.cs",
-              "RelativeToolTip": "Category_Task1\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Order_Detail.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Entities\\Order_Detail.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Entities\\Order_Detail.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Entities\\Order_Detail.cs",
+              "RelativeToolTip": "Category_Task1\\Entities\\Order_Detail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T07:25:04.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20240816084656_Initial.cs",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Migrations\\20240816084656_Initial.cs",
-              "RelativeDocumentMoniker": "Category_Task1\\Migrations\\20240816084656_Initial.cs",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Migrations\\20240816084656_Initial.cs",
-              "RelativeToolTip": "Category_Task1\\Migrations\\20240816084656_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T08:46:56.497Z"
+              "WhenOpened": "2024-08-21T03:26:47.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -105,13 +108,40 @@
               "RelativeDocumentMoniker": "Category_Task1\\Program.cs",
               "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Program.cs",
               "RelativeToolTip": "Category_Task1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T07:23:29.575Z"
+              "WhenOpened": "2024-08-16T07:23:29.575Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Data\\DataContext.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Data\\DataContext.cs",
+              "RelativeToolTip": "Category_Task1\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:54:01.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Category_Task1\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Category_Task1\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T03:36:14.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Category_Task1.csproj",
               "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Category_Task1.csproj",
               "RelativeDocumentMoniker": "Category_Task1\\Category_Task1.csproj",
@@ -119,19 +149,8 @@
               "RelativeToolTip": "Category_Task1\\Category_Task1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-16T08:45:02.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\appsettings.json",
-              "RelativeDocumentMoniker": "Category_Task1\\appsettings.json",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\appsettings.json",
-              "RelativeToolTip": "Category_Task1\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-16T08:02:20.695Z"
+              "WhenOpened": "2024-08-16T08:45:02.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -143,19 +162,8 @@
               "RelativeToolTip": "Category_Task1\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-16T08:25:15.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Category_Task1.http",
-              "DocumentMoniker": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Category_Task1.http",
-              "RelativeDocumentMoniker": "Category_Task1\\Category_Task1.http",
-              "ToolTip": "D:\\Amazing_Intern\\Task_1\\Category_Task1\\Category_Task1\\Category_Task1.http",
-              "RelativeToolTip": "Category_Task1\\Category_Task1.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-16T07:19:28.535Z"
+              "WhenOpened": "2024-08-16T08:25:15.763Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -41,6 +41,31 @@ namespace Category_Task1.Migrations
 
                     b.ToTable("Categories");
                 });
+
+            modelBuilder.Entity("Category_Task1.Entities.Order_Detail", b =>
+                {
+                    b.Property<int>("Order_Detail_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Order_Detail_Id"));
+
+                    b.Property<decimal>("Order_Detail_Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Order_Detail_Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Order_Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Product_Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Order_Detail_Id");
+
+                    b.ToTable("Order_Details");
+                });
 #pragma warning restore 612, 618
         }
     }

@@ -58,7 +58,7 @@ namespace Category_Task1.Controllers
             _dbcontext.Categories.Add(category);
             //Save the changes to the database.
             await _dbcontext.SaveChangesAsync();
-            //returns the list of categories after you have added a new one.
+            //returns the catalog list after it has been added.
             return Ok(await _dbcontext.Categories.ToListAsync());
         }
 
@@ -88,7 +88,7 @@ namespace Category_Task1.Controllers
             dbCategory.Description = updateCategory.Description;
             //Save the changes to the database.
             await _dbcontext.SaveChangesAsync();
-            //trả về danh sách danh mục sau khi đã cập nhật.
+            //returns the catalog list after it has been updated.
             return Ok(await _dbcontext.Categories.ToListAsync());
         }
 
@@ -107,7 +107,7 @@ namespace Category_Task1.Controllers
             _dbcontext.Categories.Remove(dbCategory);
             //After deletion, the changes will be saved to the database using await _dbcontext. SaveChangesAsync().
             await _dbcontext.SaveChangesAsync();
-            //Finally, the method returns the list of categories after it has been deleted.
+            //returns the catalog list after it has been deleted.
             return Ok(await _dbcontext.Categories.ToListAsync());
         }
     }
