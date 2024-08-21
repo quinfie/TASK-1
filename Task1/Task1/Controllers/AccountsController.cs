@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -100,16 +101,33 @@ namespace WebApiWithRoleAuthentication.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                new Claim(ClaimTypes.Name, account.Username),
-                new Claim(ClaimTypes.Role, account.RoleEmployee.ToString())
+                    new Claim(ClaimTypes.Name, account.Username),
+                    new Claim(ClaimTypes.Role, account.RoleEmployee.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                Issuer = _configuration["Jwt:Issuer"], // Kiểm tra Issuer
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])), SecurityAlgorithms.HmacSha256Signature) // Kiểm tra Key
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
+        [Authorize(Roles = "1")] // Chỉ dành cho Admin (RoleEmployee = 1)
+        [HttpGet("admin")]
+        public IActionResult AdminAction()
+        {
+            return Ok("Welcome Admin");
+        }
+
+        [Authorize(Roles = "0")] // Chỉ dành cho User (RoleEmployee = 0)
+        [HttpGet("user")]
+        public IActionResult UserAction()
+        {
+            return Ok("Welcome User");
+        }
+
+
 
         //[HttpPost("add-role")]
         //public async Task<IActionResult> AddRole([FromBody] string role)
@@ -146,11 +164,11 @@ namespace WebApiWithRoleAuthentication.Controllers
         //    return BadRequest(result.Errors);
         //}
 
-        [HttpGet("secure-data")]
-        public IActionResult GetSecureData()
-        {
-            // API này chỉ được truy cập bởi người dùng đã xác thực
-            return Ok(new { message = "This is secure data" });
-        }
+        //[HttpGet("secure-data")]
+        //public IActionResult GetSecureData()
+        //{
+        //    // API này chỉ được truy cập bởi người dùng đã xác thực
+        //    return Ok(new { message = "This is secure data" });
+        //}
     }
 }
